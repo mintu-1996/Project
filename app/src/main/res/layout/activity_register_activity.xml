@@ -18,7 +18,8 @@
     <android.support.design.widget.TextInputLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/register_email_ti">
+        android:id="@+id/register_email_ti"
+       >
     <EditText
         style="@style/edit"
         android:hint="@string/u_name"
@@ -44,7 +45,8 @@
     <android.support.design.widget.TextInputLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/register_dob_ti">
+        android:id="@+id/register_dob_ti"
+        >
         <EditText
             style="@style/edit"
             android:hint="@string/date"
@@ -56,17 +58,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:passwordToggleEnabled="true"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:id="@+id/register_pass_ti">
         <EditText
             style="@style/edit"
             android:hint="@string/pass"
             android:inputType="textPassword"
+
             android:id="@+id/register_pass"/>
     </android.support.design.widget.TextInputLayout>
     <android.support.design.widget.TextInputLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:passwordToggleEnabled="true"
+
         android:id="@+id/register_repass_ti">
         <EditText
             style="@style/edit"
@@ -78,7 +85,8 @@
     <Button
         style="@style/btn"
         android:text="@string/register"
-        android:onClick="registerUser"/>
+        android:onClick="registerUser"
+        />
 
 </LinearLayout>
     </ScrollView>
