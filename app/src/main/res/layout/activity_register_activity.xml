@@ -6,6 +6,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 <LinearLayout
    style="@style/linear">
+    <EditText
+        style="@style/edit"
+        android:hint="@string/u_name"/>
 
 </LinearLayout>
     </android.support.design.widget.CoordinatorLayout>
