@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">Project</string>
-    <string name="u_name">Username</string>
-    <string name="pass">Passwors</string>
+    <string name="u_name">Email</string>
+    <string name="pass">Password</string>
+    <string name="repass">Re-Enter Password</string>
     <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="date">DOB</string>
 </resources>
