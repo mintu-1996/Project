@@ -20,11 +20,19 @@
         <item name="android:layout_width">150sp</item>
         <item name="android:layout_height">50sp</item>
         <item name="android:background">@drawable/btn_shape</item>
+        <item name="android:layout_margin">10dp</item>
     </style>
     <style name="linear">
         <item name="android:gravity">center</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:orientation">vertical</item>
+    </style>
+    <style name="radio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">10dp</item>
     </style>
 </resources>
