@@ -3,4 +3,8 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="bg_color">#fcf9f9</color>
+    <color name="facebook_button">#4d19ef</color>
+    <color name="google_color">#faf7f7</color>
+    <color name="hintcolor">#f90505</color>
 </resources>

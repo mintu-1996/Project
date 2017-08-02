@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/linear"
+    android:id="@+id/main_layout">
+    <ImageView
+        android:id="@+id/iv_logo"
+        style="@style/logo_design"
+        android:src="@drawable/movie" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ti2">
+
+        <EditText
+            style="@style/username"
+            android:id="@+id/user"
+            android:hint="@string/u_name"
+            android:inputType="textPersonName"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ti3"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            style="@style/password"
+            android:id="@+id/pass"
+            android:hint="@string/pass"
+            android:inputType="textPassword"
+            />
+        <TextView
+            style="@style/text_forgot"
+            android:text="@string/ForgotPassword"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/inner_linear"
+        android:id="@+id/inner_layout">
+        <ImageView
+            android:id="@+id/iv_facebookconnect"
+            style="@style/fb_login_design"
+            android:src="@drawable/facebookconnect" />
+
+        <ImageView
+            android:id="@+id/iv_googleconnect"
+            style="@style/fb_login_design"
+            android:src="@drawable/google" />
+    </LinearLayout>
+    <Button
+        style="@style/btn_login"
+        android:id="@+id/b_login"
+        android:text="@string/login"
+        android:onClick="login"
+        />
+
+</LinearLayout>

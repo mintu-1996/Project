@@ -2,6 +2,7 @@ package com.example.mintu_1996.project;
 
 import android.app.Activity;
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -98,8 +99,7 @@ public class register_activity extends Activity {
             ti2.setError("");
             ti3.setError("Please Re-Enter Password");
         }
-
-        //Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
-
+        Intent i=new Intent(this,LoginActivity.class);
+        startActivity(i);
     }
 }
