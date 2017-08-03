@@ -14,7 +14,7 @@
         android:id="@+id/ti2">
 
         <EditText
-            style="@style/username"
+            style="@style/edit"
             android:id="@+id/user"
             android:hint="@string/u_name"
             android:inputType="textPersonName"
@@ -27,7 +27,7 @@
         app:passwordToggleEnabled="true">
 
         <EditText
-            style="@style/password"
+            style="@style/edit"
             android:id="@+id/pass"
             android:hint="@string/pass"
             android:inputType="textPassword"
@@ -40,23 +40,30 @@
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        style="@style/inner_linear"
+        style="@style/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:id="@+id/inner_layout">
         <ImageView
             android:id="@+id/iv_facebookconnect"
-            style="@style/fb_login_design"
-            android:src="@drawable/facebookconnect" />
+            style="@style/fb_go_login_design"
+            android:src="@drawable/fbbbbs"
+            android:layout_height="wrap_content" />
 
         <ImageView
             android:id="@+id/iv_googleconnect"
-            style="@style/fb_login_design"
-            android:src="@drawable/google" />
+            style="@style/fb_go_login_design"
+            android:layout_height="43dp"
+            android:src="@drawable/gm" />
     </LinearLayout>
     <Button
-        style="@style/btn_login"
+        style="@style/btn"
+        android:layout_width="300sp"
         android:id="@+id/b_login"
+        android:layout_marginTop="20sp"
         android:text="@string/login"
         android:onClick="login"
-        />
+        android:layout_height="40dp" />
 
 </LinearLayout>

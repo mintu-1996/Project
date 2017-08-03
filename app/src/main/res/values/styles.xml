@@ -7,7 +7,6 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
     <style name="edit">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -27,18 +26,15 @@
         <item name="android:layout_width">200sp</item>
         <item name="android:layout_height">100sp</item>
         <item name="android:background">@drawable/btn_shape</item>
-
         <item name="android:layout_margin">10dp</item>
     </style>
-
-
     <style name="linear">
         <item name="android:gravity">center</item>
         <!--<item name="android:background">@drawable/layout</item>-->
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:orientation">vertical</item>
-        <item name="android:background">#f7f756</item>
+        <item name="android:background">#fbfbfa</item>
     </style>
     <style name="radio">
         <item name="android:layout_width">wrap_content</item>
@@ -46,9 +42,9 @@
         <item name="android:orientation">horizontal</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_margin">10dp</item>
-        <!--<item name="android:background">@color/global</item>-->
     </style>
-    <style name="fb_login_design">
+
+    <style name="fb_go_login_design">
         <item name="android:layout_height">30dp</item>
         <item name="android:layout_marginTop">10dp</item>
         <item name="android:layout_width">156dp</item>
@@ -63,33 +59,11 @@
         <item name="android:gravity">center</item>
         <!--<item name="android:layout_marginRight">10dp</item>-->
     </style>
-    <style name="google_login_design">
-        <!--<item name="android:layout_marginRight">10dp</item>-->
-        <item name="android:layout_height">30dp</item>
-        <item name="android:layout_width">156dp</item>
-        <item name="android:layout_marginTop">10dp</item>
-        <!--<item name="android:layout_marginLeft">10dp</item>-->
-        <item name="android:gravity">center</item>
-    </style>
-    <style name="login_design">
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:gravity">center</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_gravity">center</item>
-        <item name="android:layout_margin">10dp</item>
-        <item name="android:layout_marginBottom">15dp</item>
-    </style>
-    <style name="text_design">
+    <style name="text_forgot">
     <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">20dp</item>
     <item name="android:layout_width">wrap_content</item>
-    <item name="android:layout_gravity">center</item>
+    <item name="android:layout_gravity">right</item>
     <item name="android:layout_margin">10dp</item>
 </style>
-    <style name="text_forgot">
-        <item name="android:textSize">15dp</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_gravity">right</item>
-    </style>
 </resources>
