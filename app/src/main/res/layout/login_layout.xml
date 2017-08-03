@@ -32,11 +32,11 @@
             android:hint="@string/pass"
             android:inputType="textPassword"
             />
-        <TextView
-            style="@style/text_forgot"
-            android:text="@string/ForgotPassword"
-            />
     </android.support.design.widget.TextInputLayout>
+    <TextView
+        style="@style/text_forgot"
+        android:text="@string/ForgotPassword"
+        />
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
