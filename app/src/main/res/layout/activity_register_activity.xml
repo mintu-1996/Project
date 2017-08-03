@@ -6,6 +6,7 @@
     tools:layout_editor_absoluteY="8dp"
 
     xmlns:android="http://schemas.android.com/apk/res/android">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -88,6 +89,124 @@
         android:onClick="registerUser"/>
 </LinearLayout>
 </LinearLayout>
+
+        <LinearLayout style="@style/linear">
+            <LinearLayout
+                style="@style/linear"
+                android:background="@color/over"
+                >
+
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/login" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/register_fname_ti"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/register_fname"
+                        style="@style/edit"
+                        android:hint="@string/f_name"
+                        android:inputType="textEmailAddress" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/register_lname_ti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/register_lname"
+                        style="@style/edit"
+                        android:hint="@string/l_name"
+                        android:inputType="textEmailAddress" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                android:id="@+id/register_email_ti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/register_email"
+                    style="@style/edit"
+                    android:hint="@string/u_name"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+            <RadioGroup
+                android:id="@+id/radio_register"
+                style="@style/radio">
+
+                <RadioButton
+                    android:id="@+id/radio_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/male" />
+
+                <RadioButton
+                    android:id="@+id/radio_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/female" />
+            </RadioGroup>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/register_dob_ti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/register_dob"
+                    style="@style/edit"
+                    android:drawableEnd="@drawable/date"
+                    android:hint="@string/date" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/register_pass_ti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/register_pass"
+                    style="@style/edit"
+                    android:hint="@string/pass"
+                    android:inputType="textPassword" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/register_repass_ti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/register_repass"
+                    style="@style/edit"
+                    android:hint="@string/repass"
+                    android:inputType="textPassword" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                style="@style/btn"
+                android:onClick="registerUser"
+                android:text="@string/register" />
+            </LinearLayout>
+        </LinearLayout>
     </ScrollView>
     </android.support.design.widget.CoordinatorLayout>
 

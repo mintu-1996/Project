@@ -16,15 +16,19 @@
         <item name="android:textStyle">italic</item>
         <item name="android:fontFamily">cursive</item>
         <item name="android:layout_margin">10dp</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorLink">@color/link</item>
+        <item name="android:textColorHint">@color/hint</item>
     </style>
     <style name="btn">
-        <item name="android:layout_width">150sp</item>
-        <item name="android:layout_height">50sp</item>
+        <item name="android:layout_width">300sp</item>
+        <item name="android:layout_height">40sp</item>
         <item name="android:background">@drawable/btn_shape</item>
         <item name="android:layout_margin">10dp</item>
     </style>
     <style name="linear">
         <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/layout</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:orientation">vertical</item>
@@ -43,5 +47,35 @@
         <item name="android:orientation">horizontal</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="fb_go_login_design">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_width">156dp</item>
+        <!--<item name="android:layout_marginLeft">20dp</item>-->
+        <item name="android:gravity">center</item>
+        <!--<item name="android:layout_marginRight">10dp</item>-->
+    </style>
+    <style name="logo_design">
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_width">70dp</item>
+        <!--<item name="android:layout_marginLeft">20dp</item>-->
+        <item name="android:gravity">center</item>
+        <!--<item name="android:layout_marginRight">10dp</item>-->
+    </style>
+    <style name="text_forgot">
+    <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/text</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_gravity">right</item>
+    <item name="android:layout_margin">10dp</item>
+</style>
+    <style name="line_view">
+    <item name="android:layout_width">100dp</item>
+    <item name="android:layout_height">1dp</item>
+    <item name="android:background">@color/hint</item>
+    <item name="android:layout_gravity">center_vertical</item>
     </style>
 </resources>

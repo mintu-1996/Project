@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/linear"
+    android:id="@+id/main_layout">
+    <LinearLayout
+        style="@style/linear"
+        android:background="@color/over"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        style="@style/logo_design"
+        android:src="@drawable/movie" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/ti2">
+
+        <EditText
+            style="@style/edit"
+            android:id="@+id/user"
+            android:hint="@string/u_name"
+            android:inputType="textPersonName" />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ti3"
+        android:layout_marginLeft="10dp"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            style="@style/edit"
+            android:id="@+id/pass"
+            android:hint="@string/pass"
+
+            android:inputType="textPassword"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <TextView
+        style="@style/text_forgot"
+        android:id="@+id/login_forgot"
+        android:text="@string/ForgotPassword"
+        />
+    <Button
+        style="@style/btn"
+        android:id="@+id/b_login"
+        android:text="@string/login"
+        android:onClick="login" />
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/linear"
+        android:layout_height="38dp"
+        android:orientation="horizontal"
+        android:id="@+id/inner1_layout"
+
+        >
+        <LinearLayout
+            style="@style/linear"
+            android:background="@color/over"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/SplitLine_hor1"
+                style="@style/line_view" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/connect"
+                android:textColor="@color/text"
+                android:layout_gravity="center" />
+            <View
+                android:id="@+id/SplitLine_hor2"
+                style="@style/line_view"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/linear"
+
+
+        android:orientation="horizontal"
+        android:id="@+id/inner2_layout">
+        <LinearLayout
+            style="@style/linear"
+            android:orientation="horizontal"
+            android:background="@color/over"
+            android:paddingBottom="50dp">
+        <ImageView
+            android:id="@+id/iv_facebookconnect"
+            style="@style/fb_go_login_design"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/iv_googleconnect"
+            style="@style/fb_go_login_design"
+            android:layout_height="60dp"
+            android:src="@drawable/google" />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

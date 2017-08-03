@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".register_activity"></activity>
+        <activity android:name=".ThreaterMoviesActivity"></activity>
+        <activity android:name=".LoginActivity"></activity>
         <activity android:name=".ThreaterMoviesActivity">
 
         </activity>
