@@ -4,12 +4,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:layout_editor_absoluteX="8dp"
     tools:layout_editor_absoluteY="8dp"
+
     xmlns:android="http://schemas.android.com/apk/res/android">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 <LinearLayout
-   style="@style/linear">
+
+   style="@style/linear"
+
+   >
+    <LinearLayout
+        style="@style/linear2">
+
     <ImageView
         android:layout_width="80dp"
         android:layout_height="70dp"
@@ -79,7 +86,7 @@
         style="@style/btn"
         android:text="@string/register"
         android:onClick="registerUser"/>
-
+</LinearLayout>
 </LinearLayout>
     </ScrollView>
     </android.support.design.widget.CoordinatorLayout>

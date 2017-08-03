@@ -11,6 +11,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class ThreaterMoviesActivity extends AppCompatActivity {
     ViewPager mViewPager;
     CustomPagerAdapter mCustomPagerAdapter;
@@ -21,6 +24,7 @@ public class ThreaterMoviesActivity extends AppCompatActivity {
             R.drawable.fourth,
 
     };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +33,29 @@ public class ThreaterMoviesActivity extends AppCompatActivity {
 
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(mCustomPagerAdapter);
+        Timer time = new Timer();
+        time.scheduleAtFixedRate(new MyTimer(),5000,3000);
     }
+
+    public class MyTimer extends TimerTask{
+
+        @Override
+        public void run() {
+ThreaterMoviesActivity.this.runOnUiThread(new Runnable() {
+    @Override
+    public void run() {
+        if (mViewPager.getCurrentItem() == 0) {
+            mViewPager.setCurrentItem(1);
+        } else if (mViewPager.getCurrentItem() == 1) {
+            mViewPager.setCurrentItem(2);
+        }else if (mViewPager.getCurrentItem() == 2) {
+            mViewPager.setCurrentItem(3);
+        }
+    }
+});
+        }
+    }
+
     class CustomPagerAdapter extends PagerAdapter {
 
         Context mContext;

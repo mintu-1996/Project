@@ -10,17 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-
-        </activity>
-        <activity android:name=".ThreaterMoviesActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".register_activity"></activity>
-        <activity android:name=".ThreaterMoviesActivity"></activity>
+        <activity android:name=".ThreaterMoviesActivity">
+
+        </activity>
+        <activity android:name=".register_activity">
+
+        </activity>
+
     </application>
 
 </manifest>
