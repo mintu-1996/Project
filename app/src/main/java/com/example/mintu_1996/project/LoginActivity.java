@@ -7,6 +7,8 @@ import android.support.design.widget.TextInputLayout;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -17,6 +19,7 @@ import org.w3c.dom.Text;
 public class LoginActivity extends Activity {
     EditText username,password;
     TextInputLayout t1,t2;
+    TextView tv;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +28,13 @@ public class LoginActivity extends Activity {
         password=(EditText)findViewById(R.id.pass);
         t1=(TextInputLayout)findViewById(R.id.ti2);
         t2=(TextInputLayout)findViewById(R.id.ti3);
+        tv=(TextView)findViewById(R.id.login_forgot);
+        tv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(LoginActivity.this, "Ok", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
     public void login(View v)
     {
@@ -40,7 +50,7 @@ public class LoginActivity extends Activity {
             if(pass.isEmpty())
             {
                 password.requestFocus();
-                t2.setError("Invalid Password");
+                t2.setError("Please Enter Password");
             }
         }
     }

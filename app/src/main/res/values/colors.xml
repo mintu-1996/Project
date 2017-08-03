@@ -11,5 +11,6 @@
     <color name="facebook_button">#4d19ef</color>
     <color name="google_color">#faf7f7</color>
     <color name="btn_color">#16f481</color>
+    <color name="over">#96697779</color>
 
 </resources>

@@ -27,11 +27,10 @@
     </style>
     <style name="linear">
         <item name="android:gravity">center</item>
-        <!--<item name="android:background">@drawable/layout</item>-->
+        <item name="android:background">@drawable/layout</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:orientation">vertical</item>
-        <item name="android:background">#fbfbfa</item>
     </style>
     <style name="radio">
         <item name="android:layout_width">wrap_content</item>

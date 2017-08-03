@@ -11,14 +11,44 @@
         android:layout_height="match_parent">
 
         <LinearLayout style="@style/linear">
+            <LinearLayout
+                style="@style/linear"
+                android:background="@color/over"
+                >
+
+
 
             <ImageView
                 android:layout_width="80dp"
                 android:layout_height="70dp"
                 android:layout_margin="10dp"
                 android:src="@drawable/login" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/register_fname_ti"
 
-            <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/register_fname"
+                        style="@style/edit"
+                        android:hint="@string/f_name"
+                        android:inputType="textEmailAddress" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/register_lname_ti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/register_lname"
+                        style="@style/edit"
+                        android:hint="@string/l_name"
+                        android:inputType="textEmailAddress" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
                 android:id="@+id/register_email_ti"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
@@ -95,7 +125,7 @@
                 style="@style/btn"
                 android:onClick="registerUser"
                 android:text="@string/register" />
-
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </android.support.design.widget.CoordinatorLayout>

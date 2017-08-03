@@ -2,7 +2,9 @@
     <string name="app_name">Project</string>
     <string name="pass">Password</string>
     <string name="repass">Re-Enter Password</string>
-    <string name="u_name">Username</string>
+    <string name="u_name">Email</string>
+    <string name="f_name">First Name</string>
+    <string name="l_name">Last Name</string>
     <string name="register">Register</string>
     <string name="login">Login</string>
     <string name="fb_text">Connect With Facebook</string>

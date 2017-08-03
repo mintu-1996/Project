@@ -35,6 +35,7 @@
     </android.support.design.widget.TextInputLayout>
     <TextView
         style="@style/text_forgot"
+        android:id="@+id/login_forgot"
         android:text="@string/ForgotPassword"
         />
 
