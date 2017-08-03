@@ -51,6 +51,10 @@ ThreaterMoviesActivity.this.runOnUiThread(new Runnable() {
         }else if (mViewPager.getCurrentItem() == 2) {
             mViewPager.setCurrentItem(3);
         }
+        else
+        {
+            mViewPager.setCurrentItem(0);
+        }
     }
 });
         }
@@ -59,11 +63,11 @@ ThreaterMoviesActivity.this.runOnUiThread(new Runnable() {
     class CustomPagerAdapter extends PagerAdapter {
 
         Context mContext;
-        LayoutInflater mLayoutInflater;
+        //LayoutInflater mLayoutInflater;
 
         public CustomPagerAdapter(Context context) {
             mContext = context;
-            mLayoutInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            //mLayoutInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         }
 
         @Override
@@ -78,8 +82,9 @@ ThreaterMoviesActivity.this.runOnUiThread(new Runnable() {
 
         @Override
         public Object instantiateItem(ViewGroup container, int position) {
-            View itemView = mLayoutInflater.inflate(R.layout.pager_item, container, false);
-
+            //View itemView = mLayoutInflater.inflate(R.layout.pager_item, container, false);
+            LayoutInflater li=getLayoutInflater();
+            View itemView=li.inflate(R.layout.pager_item,null);
             ImageView imageView = (ImageView) itemView.findViewById(R.id.imageView);
             imageView.setImageResource(mResources[position]);
 

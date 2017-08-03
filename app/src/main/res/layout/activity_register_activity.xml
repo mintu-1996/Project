@@ -13,8 +13,7 @@
         <LinearLayout style="@style/linear">
             <LinearLayout
                 style="@style/linear"
-                android:background="@color/over"
-                >
+                android:background="@color/over">
 
 
 

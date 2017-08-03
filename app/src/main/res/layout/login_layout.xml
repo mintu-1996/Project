@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     style="@style/linear"
@@ -11,6 +13,7 @@
     <ImageView
         android:id="@+id/iv_logo"
         style="@style/logo_design"
+        android:layout_marginTop="20dp"
         android:src="@drawable/movie" />
 
     <android.support.design.widget.TextInputLayout
@@ -37,7 +40,6 @@
             style="@style/edit"
             android:id="@+id/pass"
             android:hint="@string/pass"
-
             android:inputType="textPassword"
             />
     </android.support.design.widget.TextInputLayout>
@@ -93,7 +95,7 @@
             style="@style/linear"
             android:orientation="horizontal"
             android:background="@color/over"
-            android:paddingBottom="50dp">
+            android:paddingBottom="20dp">
         <ImageView
             android:id="@+id/iv_facebookconnect"
             style="@style/fb_go_login_design"
@@ -109,3 +111,4 @@
     </LinearLayout>
 </LinearLayout>
 </LinearLayout>
+    </ScrollView>
