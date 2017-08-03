@@ -7,10 +7,9 @@
     <string name="l_name">Last Name</string>
     <string name="register">Register</string>
     <string name="login">Login</string>
-    <string name="fb_text">Connect With Facebook</string>
-    <string name="google_text">Connect with Google</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
+    <string name="connect">OR CONNECT WITH</string>
     <string name="date">DOB</string>
     <string name="ForgotPassword">Forgot Password?</string>
 </resources>
