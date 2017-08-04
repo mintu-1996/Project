@@ -17,7 +17,7 @@ public class MainActivity extends Activity {
     }
     public void next(View view)
     {
-        Intent i=new Intent(this,register_activity.class);
+        Intent i=new Intent(this,TheatreNearBy.class);
         startActivity(i);
     }
 }

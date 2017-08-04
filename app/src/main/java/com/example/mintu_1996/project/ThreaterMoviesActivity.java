@@ -24,13 +24,12 @@ public class ThreaterMoviesActivity extends AppCompatActivity {
             R.drawable.fourth,
 
     };
-
+int i=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_threater_movies);
-        mCustomPagerAdapter = new CustomPagerAdapter(this);
-
+        mCustomPagerAdapter = new CustomPagerAdapter(this,mResources,mResources.length);
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(mCustomPagerAdapter);
         Timer time = new Timer();
@@ -44,23 +43,17 @@ public class ThreaterMoviesActivity extends AppCompatActivity {
 ThreaterMoviesActivity.this.runOnUiThread(new Runnable() {
     @Override
     public void run() {
-        if (mViewPager.getCurrentItem() == 0) {
-            mViewPager.setCurrentItem(1);
-        } else if (mViewPager.getCurrentItem() == 1) {
-            mViewPager.setCurrentItem(2);
-        }else if (mViewPager.getCurrentItem() == 2) {
-            mViewPager.setCurrentItem(3);
-        }
+        mViewPager.setCurrentItem(i);
+        if(i==mResources.length-1)
+            i=0;
         else
-        {
-            mViewPager.setCurrentItem(0);
-        }
+            i++;
     }
 });
         }
     }
 
-    class CustomPagerAdapter extends PagerAdapter {
+    /*class CustomPagerAdapter extends PagerAdapter {
 
         Context mContext;
         //LayoutInflater mLayoutInflater;
@@ -97,5 +90,5 @@ ThreaterMoviesActivity.this.runOnUiThread(new Runnable() {
         public void destroyItem(ViewGroup container, int position, Object object) {
             container.removeView((LinearLayout) object);
         }
-    }
+    }*/
 }

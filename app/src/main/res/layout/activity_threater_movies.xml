@@ -9,14 +9,16 @@ android:orientation="vertical"
     <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/pager"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="200dp"
+        android:layout_marginBottom="10dp">
     </android.support.v4.view.ViewPager>
 
        <ListView
            android:layout_width="match_parent"
            android:layout_height="match_parent"
            android:divider="#f00"
-           android:dividerHeight="2dp"></ListView>
+           android:dividerHeight="2dp"
+           android:id="@+id/listview_items"></ListView>
    </LinearLayout>
 
 
